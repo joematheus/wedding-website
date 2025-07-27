@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import Image from "next/image";
 
 export default function Home() {
   const [attending, setAttending] = useState('Yes');
@@ -10,10 +11,17 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('wedding-website/assets/bg.jpg')` }}>
+    <div className="h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('wedding-website/assets/bg.jpg')` }}>
       <div className="absolute inset-0 z-0" style={{ backgroundColor: '#5d6444FF' }}></div>
       <div className="max-w-lg w-full bg-white p-8 rounded-lg shadow-md z-10" style={{ color: '#835c3c' }}>
-        <h1 className="text-3xl font-serif font-bold text-center mb-4">You are Invited!</h1>
+        <Image
+          src="wedding-website/logo.png"
+          alt="Wedding Logo"
+          width={120}
+          height={120}
+          className="mx-auto mb-4"
+        />
+        <h1 className="text-3xl font-serif font-bold text-center mb-4">You are invited!</h1>
         <p className="text-center text-gray-600 mb-8">Please RSVP by filling out the form below.</p>
 
         <form
