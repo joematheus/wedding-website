@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "RSVP",
   description: "Joemathel & Theus Wedding Celebration RSVP",
   icons: {
-    icon: 'logo.png',
+    icon: '/wedding-website/logo.png',
   },
 };
 
