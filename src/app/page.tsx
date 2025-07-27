@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/wedding-website/assets/bg.jpg')` }}>
+    <div className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 z-0" style={{ backgroundColor: '#5d6444FF' }}></div>
       <div className="max-w-lg w-full bg-white p-8 rounded-lg shadow-md z-10" style={{ color: '#835c3c' }}>
         <Image
