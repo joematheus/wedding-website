@@ -26,7 +26,11 @@ export default function Home() {
               body: data,
               mode: "no-cors", // important for Google Apps Script
             }).then(() => {
-              router.push("/thankyou");
+              if (attending == "Yes") {
+                router.push("/thankyou");
+              } else {
+                router.push("/not-attending");
+              }
             });
           }}
           action="https://script.google.com/macros/s/AKfycbws1t3vgKXzBaJ54dIE12nUAGSwg4c_-tWC8DUrh3i8zyUNuMYaoVaIQgFN6aAkLFQ/exec"
