@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('wedding-website/assets/bg.jpg')` }}>
       <div className="absolute inset-0 z-0" style={{ backgroundColor: '#5d6444FF' }}></div>
       <div className="max-w-lg w-full bg-white p-8 rounded-lg shadow-md z-10" style={{ color: '#835c3c' }}>
-        <h1 className="text-3xl font-serif font-bold text-center mb-4">You're Invited!</h1>
+        <h1 className="text-3xl font-serif font-bold text-center mb-4">You are Invited!</h1>
         <p className="text-center text-gray-600 mb-8">Please RSVP by filling out the form below.</p>
 
         <form
